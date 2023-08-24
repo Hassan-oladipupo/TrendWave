@@ -1,0 +1,25 @@
+
+{# Inheriting the base.html.twig  template #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div>
+{% if messages | length > 0 %}
+
+{% for key, message in messages | slice(0, limit) %}
+
+  <div> 
+    <a href = " {{path ('app_Show_One', {id: key}) }}"> {{message.message}} </a>  
+  </div>
+        {# using the include fuction to display the partial template(_message.html.twig) here #}
+          {{include('HelloView/_message.html.twig', {message: message})}}
+ {% endfor %}
+
+ {% else %}
+
+ <div> There's no message yet!</div>
+
+ {% endif %}
+
+</div>
+{% endblock %}

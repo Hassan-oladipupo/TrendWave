@@ -1,0 +1,10 @@
+{# if profile image and user profile are not null display the image #}
+
+{% if profile and profile.Image %}
+<img src="{{ profiles ~ profile.Image }}"
+  class="inline-block h-{{size}} w-{{size}} rounded-full ring-2 ring-white dark:ring-gray-600" />
+
+{# display this by default #}
+{% else %}
+  <div class="inline-block bg-gray-200 dark:bg-gray-700 rounded-full text-3xl h-{{size}} w-{{size}} ring-2 ring-white dark:ring-gray-600"></div>
+{% endif %}

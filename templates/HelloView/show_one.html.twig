@@ -1,0 +1,14 @@
+{# Inheriting the base.html.twif template #}
+
+{% extends 'base.html.twig' %}
+
+  {% block body %}
+  <div> The message is </div>
+  <div>
+  <div>{{message.message}}</div>
+ <b>
+ {{include('HelloView/_message.html.twig', {message: message})}}
+ </b> 
+</div>
+  {% endblock %}
+
