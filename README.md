@@ -17,7 +17,7 @@ TrendWave is a social media platform built using PHP 8, Symfony 6, and Tailwind 
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/Hassan-oladipupo/TrendWave/`
+1. Clone the repository: `git clone git clone git@github.com:Hassan-oladipupo/TrendWave.git
 2. Install dependencies: `composer install`
 3. Configure your environment variables in the `.env` file.
 4. Set up your database and run migrations: `php bin/console doctrine:migrations:migrate`
